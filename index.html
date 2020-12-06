@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    	div.center {
+            padding: 25px;
+            background-color: #22bfa0;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+    	input[type=text], textarea, select {
+            font: 17px Calibri;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=button]{ 
+           
+            width: auto;
+            float: right;
+            cursor: pointer;
+            padding: 10px;
+            outline: none;
+            border:none;
+            background-color: #f44336;
+            border-radius: 30px;
+            color: white;
+        }
+        
+        div.outer{
+            padding: 10px;
+            background-color: white;
+        }
+        
+        img.center-block{
+              display: block;
+  margin-left: auto;
+  margin-right: auto;
+            width: auto;
+            
+}
+        
+        b{
+            color: white;
+        }
+
+        
+        
+    </style> 
+       
+    
+    
+    <img class="center-block img-responsive" src="b888f5ab-f393-42ab-a986-85b0a3d9035f_200x200.png" alt="Chania"> 
+    
+    <div class="outer">
+    <div class="center">
+
+        <!--Add few elements to the form-->
+        <div>
+            <label for="fname"><b>Enter your note name</b></label><br> 
+            <input type="text" id="txtName" placeholder="Note Name"/>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div >
+            <label for="fname" ><b>Enter the date</b></label><br>
+            <input class="form-control" id="datePicker" type="date" >
+        </div>
+        
+        <br>
+        <br>
+        
+        
+        <div>
+            <label for="fname" ><b>Enter the Message</b></label><br>
+            <textarea id="msg" name="msg" placeholder="Write some message..." style="height:100px"></textarea>
+        </div>
+        
+        
+        
+        <br>
+        <br>
+        
+        <div >
+            <label for="fname" ><b>Enter the filename for saving</b></label><br>
+            <input class="form-control" placeholder="File Name" id="file" type="text" >
+        </div>
+         <br>
+        <br>
+        
+        <div>
+            <input type="button" id="bt" value="Save my notes" onclick="saveFile()" />
+        </div>
+    </div>
+    </div>
+    
+    
+<script>
+    let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const name = document.getElementById('txtName');
+        const date = document.getElementById('datePicker')
+        const msg = document.getElementById('msg');
+        const filename = document.getElementById('file');
+        
+        
+        // This variable stores all the data.
+        let data = 
+            
+            'Hello, Welcome to Notes Me' + ' \r\n ' +
+            
+            '-------------------------------------------------------'+
+            
+            '\r Name: ' + '\r' + name.value + ' \r\n ' + 
+            
+            'Date: ' + '\r' + date.value + ' \r\n '+ 
+            
+            '\r Message: '+ '\r' + msg.value + ' \r\n '+
+            
+            
+            '-------------------------------------------------------'+
+
+            '\r Created By Tanu Nanda Prabhu'
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        
+        const sFileName = filename.value+'.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+    
+    
+    
+    $(document).ready( function() {
+    var now = new Date();
+ 
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+    var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+
+   $('#datePicker').val(today);
+});
+</script>
+    </body>
+
+</html>
