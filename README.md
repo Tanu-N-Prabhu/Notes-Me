@@ -20,7 +20,7 @@
 | <img src = "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> |<p align = "justify"> I have used `CSS` for <b>styling the pages</b>, meaning designing the pages visually like background color, alignment of the buttons, and page layouts.</p> | 
 | <img src = "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"> | <p align = "justify">I have used `BootStrap` for <b>responsiveness</b>, meaning using `div` tags and few libraries of `BootStrap` which helps to website to fit to all the screens.</p> | 
 | <img src = "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> | <p align = "justify">I have used `Javascript` to save the details of the notes as a `.txt` file. Also I have used to `generate` the current date in the input field.</p> | 
-
+| <img scr = "https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"> | <p align = "justify">I used `JQuery` for <b>downloading</b> the notes along with `JavaScript`, it's just a library that will be mostly used with `JavaScript`.</p>
 
 # Tools
 
