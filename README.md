@@ -1,7 +1,7 @@
 
+<h1 align = "center"><b>Welcome to <a href ="https://tanu-n-prabhu.github.io/Notes-Me/">Notes Me</a></b></p>
 
 <p align = "center">
-
 <img src="https://github.com/Tanu-N-Prabhu/Notes-Me/blob/main/b888f5ab-f393-42ab-a986-85b0a3d9035f_200x200.png">
 </p>
 
@@ -51,4 +51,6 @@ Executed on the emulator - iPhone X
 
 <img src = "https://github.com/Tanu-N-Prabhu/Notes-Me/blob/main/2.PNG">
 
-https://tanu-n-prabhu.github.io/Notes-Me/
+# Credits
+
+1. [Encodedna](https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm) - How to save form data in a Text file using JavaScript
