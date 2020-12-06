@@ -22,7 +22,7 @@
 | <img src = "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> | <p align = "justify">I have used `Javascript` to save the details of the notes as a `.txt` file. Also I have used to `generate` the current date in the input field.</p> | 
 
 
-
+# Tools
 
 
 
