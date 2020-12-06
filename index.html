@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="7f732bb8-790e-4a3c-9211-4867009157ef_200x200.png" sizes="32x32">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <style>
+        body{
+            background-color: powderblue;
+        }
         * {
             box-sizing: border-box;
         }
@@ -43,7 +46,7 @@
         
         div.outer{
             padding: 10px;
-            background-color: white;
+            background-color: powderblue;
         }
         
         img.center-block{
@@ -59,14 +62,258 @@
         }
 
         
+        .navbar{
+    background-color: #22bfa0;
+}
+
+/** Making the first option in the navbar bolder **/
+.navbar-inverse .navbar-brand {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/** Adjusting the other options **/
+.navbar .nav {
+    
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+/** Default color for all the options, you can also control them individually **/
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+/** Text hovering color change **/
+.navbar-inverse .navbar-brand:hover {
+    color: powderblue;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: powderblue;
+}
+
+        h1{
+            color: white;
+        }
+
+        p{
+            color: white;
+        }
+
+        .row {
+  display: flex;
+padding: 10px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background-color: powderblue;
+  color: black;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: powderblue;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: black;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+
+@media screen and (min-width: 100px) {
+  
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+
+
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+/*
+    Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .rwd-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+  }
+  .rwd-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+  }
+}*/
+        .footer {
+  position: absolute;
+padding: 15px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #22bfa0;
+}
         
     </style> 
-       
+
+        
+        <!-- Navigation bar code -->
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+
+        <!-- Seperate different sections, try not to combine everything together, use div -->
+        <div class="container">
+
+            <!-- This is for the 3 horizontal lines for responsive (Minimize the screen to see) --> 
+            <div class="navbar-header">
+
+            <!-- Three lines would be put inside a button to maintain consistency and maintain elegance -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+                
+                <!-- This is the first option in the navigation bar -->
+                <!-- Put the page you want to navigation inside the href, make sure to end with an extension -->
+                <a href = "#Notes" class="navbar-brand">Notes Me</a>
+            </div>
+
+            <!-- Navigation bar options code -->
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+                <!-- To maintain the arrangement put all the options in an unordered list -->
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href = "#About">About</a></li>
+                    <li><a href = "#Tools">Tools</a></li>
+                    <li><a href = "#Manual">Manual</a></li>
+                    <!-- To add more options just mechanically copy the above lines -->
+
+                </ul>
+
+            </nav>
+
+        </div>
+            
+        </header>
+        
+  <br id="Notes">
+    <br>
     
     
-    <img class="center-block img-responsive" src="b888f5ab-f393-42ab-a986-85b0a3d9035f_200x200.png" alt="Chania"> 
+    <img class="center-block img-responsive" src="b888f5ab-f393-42ab-a986-85b0a3d9035f_200x200.png" alt="Chania" > 
+    
+    
+    
+    
+    
     
     <div class="outer">
+        
+        
+        
+        
+        
+        
     <div class="center">
 
         <!--Add few elements to the form-->
@@ -108,7 +355,125 @@
             <input type="button" id="bt" value="Save my notes" onclick="saveFile()" />
         </div>
     </div>
+        
     </div>
+        <div class = "outer" id="About">
+        <div class="center">
+        <h1>About</h1>
+            
+            <p align = "justify">Note-taking apps are the online equivalent of notebooks, and they can do more for you than paper can ever do, since they are digital. The main goal behind the creation of the "Notes Me" application was to build a place to add our day-to-day notes or other important information, and then save them as a text file at the same time so that they stay in our local storage. Also, you can choose the date and then save your notes according to your custom filename, so that you can access them as per your needs.</p>
+            
+            <p align = "justify">I am <a href="https://tanu-n-prabhu.github.io/myWebsite.io/" style="color: blue;">Tanu Nanda Prabhu</a>, this is one of my mini projects I developed within like 5-6 hours with full documentation, code, styling, and even hosting using <a href = "https://tanu-n-prabhu.github.io/Notes-Me/" style="color: blue">GitHub Pages</a>. So I just wanted to develop this application because my notes application on my phone didn’t have the feature of downloading my written information as a text file. So thanks to <a href="https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm" style="color: blue">encodedna.com</a>, this is where I got the logic of making a HTML form information to be downloadable as a text file. I really appreciate your help. I develop portfolios and various web applications for free. Visit my <a href="https://github.com/Tanu-N-Prabhu" style="color: blue">GitHub</a> and let me know if you need any help. </p>
+            
+        </div>
+        </div>
+    
+    
+    
+      <div class = "outer" id="Tools">
+        <div class="center">
+        <h1>Tools</h1>
+            <p align = "justify">The tools used for building this application are mainly as web languages and libraries associated with them, which can be found below.</p>
+            <table class="rwd-table">
+        <tbody>
+          <tr>
+            <th>Languages</th>
+            <th>Description</th>
+
+            </tr>
+            <tr>
+            <td >
+            <img src = "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+            </td>
+            <td data-th="Contact">
+                <p align = "justify" style="color: black;"> I have used <code style="color: black;">HTML</code> as the <b style="color: black;">base code</b> for the application, meaning all the <b style="color: black;">forms, buttons</b> are coded using <code style="color: black;">HTML</code>.</p>
+            </td>
+            </tr>
+
+            <tr>
+            <td data-th="Company">
+            <img src = "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+            </td>
+            <td data-th="Contact">
+                <p align = "justify" style="color: black;"> I have used <code style="color: black;">CSS</code> for <b style="color: black;">styling the pages</b>, meaning designing the pages visually like background color, alignment of the buttons, and page layouts.</p>
+
+            </td>
+            </tr>
+            
+            <tr>
+            <td data-th="Company">
+            <img src = "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+            </td>
+            <td data-th="Contact">
+                <p align = "justify" style="color: black;">I have used <code style="color: black;">BootStrap</code> for <b style="color: black;">responsiveness</b>, meaning using <code style="color: black;">div</code> tags and few libraries of <code style="color: black;">BootStrap</code> which helps to website to fit to all the screens.</p>
+            </td>
+            </tr>
+            
+        
+            <tr>
+            <td data-th="Company">
+            <img src = "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+            </td>
+            <td data-th="Contact">
+                <p align = "justify" style="color: black;">I have used <code style="color: black;">Javascript</code> to <b style="color: black;">save</b> the details of the notes as a <code style="color: black;">txt</code> file. Also I have used to <code style="color: black;">generate</code> the current date in the input field.</p>
+            </td>
+            </tr>
+
+            <tr>
+            <td data-th="Company">
+            <img src="https://img.shields.io/badge/jquery%20-%230769AD.svg?&style=for-the-badge&logo=jquery&logoColor=white"/>
+            </td>
+            <td data-th="Contact">
+                <p align = "justify" style="color: black;">I used <code style="color: black;">JQuery</code> for <b style="color: black;">downloading</b> the notes along with <code style="color: black;">JavaScript</code>, it's just a library that will be mostly used with <code style="color: black;">JavaScript</code>.</p>
+            </td>
+            </tr>
+            
+
+          
+        </tbody>
+      </table>
+            
+        </div>
+        </div>
+    
+            <div class = "outer" id="Manual">
+        <div class="center">
+        <h1>Manual</h1>
+            
+            <p align = "justify"><b>Follow the below instructions to download your notes successfully:</b></p>
+            
+            <ol>
+            <li style="color: white;"><p align = "justify">Make sure you enter all the information wisely, and correctly.</p></li>
+                
+                
+                <li style="color: white;"><p align = "justify">For selecting the date, the application selects the current date, but if you want to change it, please click on the calendar icon and select it.</p></li>
+                
+                
+                <li style="color: white;"><p align = "justify">After you enter all the information, then click the “Save” button. By doing so, all your notes will be downloaded locally to your phone/computer/laptop, etc. </p></li>
+                
+                
+                <code>
+                <b style="color: black;">Note:</b> Make sure you name your file for consistency, readability, and visibility of your text file.
+                </code>   
+                <br>
+                <br>
+                
+                <li style="color: white;"><p align = "justify">So after you download, go to your downloads on your device, your text file would be downloaded there.</p></li>
+            
+                <li style="color: white;"><p align = "justify">If you are facing any issues or need any help, feel free to drop a mail at <a href="tanuprabhu96@gmail.com" style="color: blue">tanuprabhu96@gmail.com</a></p></li>
+            
+            </ol>
+            
+        </div>
+        </div>
+    
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted" style="color: white">Designed with <span style="color: red">&#10084</span> by <a class="text-muted1" href="https://tanu-n-prabhu.github.io/myWebsite.io/" ><b style="color: blue">Tanu Nanda Prabhu</b> </a></p>
+        </div>
+    </footer>
+    
     
     
 <script>
