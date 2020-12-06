@@ -13,13 +13,14 @@
 
 # Languages Used
 
-1. `HTML`- I have used `HTML` as the <b>base code</b> for the application, meaning all the <b>forms, buttons</b> are coded using `HTML`.
 
-2. `CSS` - I have used `CSS` for <b>styling the pages</b>, meaning designing the pages visually like background color, alignment of the buttons, and page layouts.
+| Name | Description  | 
+| :---:   | :-: | 
+| <img src = "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> | I have used `HTML` as the <b>base code</b> for the application, meaning all the <b>forms, buttons</b> are coded using `HTML`. | 
+| <img src = "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> | I have used `CSS` for <b>styling the pages</b>, meaning designing the pages visually like background color, alignment of the buttons, and page layouts. | 
+| <img src = "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"> | I have used `BootStrap` for <b>responsiveness</b>, meaning using `div` tags and few libraries of `BootStrap` which helps to website to fit to all the screens. | 
+| <img src = "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> | I have used `Javascript` to save the details of the notes as a `.txt` file. Also I have used to `generate` the current date in the input field. | 
 
-3. `BootStrap` - I have used `BootStrap` for <b>responsiveness</b>, meaning using `div` tags and few libraries of `BootStrap` which helps to website to fit to all the screens.
-
-4. `Javascript` - I have used `Javascript` to save the details of the notes as a `.txt` file. Also I have used to `generate` the current date in the input field.
 
 
 
