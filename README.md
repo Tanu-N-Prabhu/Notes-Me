@@ -8,5 +8,6 @@
 
 # Objective
 
+<p align = "justify">Note-taking apps are the online equivalent of notebooks, and they can do more for you than paper can ever do, since they are digital. The main goal behind the creation of the "Notes Me" application was to build a place to add our day-to-day notes or other important information, and then save them as a text file at the same time so that they stay in our local storage. Also, you can choose the date and then save your notes according to your custom filename, so that you can access them as per your needs.</p>
 
 https://tanu-n-prabhu.github.io/Notes-Me/
