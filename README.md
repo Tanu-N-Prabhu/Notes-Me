@@ -5,6 +5,9 @@
 <img src="https://github.com/Tanu-N-Prabhu/Notes-Me/blob/main/b888f5ab-f393-42ab-a986-85b0a3d9035f_200x200.png">
 </p>
 
+# About 
+
+<p align = "justify">I am <a href="https://tanu-n-prabhu.github.io/myWebsite.io/" style="color: blue;">Tanu Nanda Prabhu</a>, this is one of my mini projects I developed within like 5-6 hours with full documentation, code, styling, and even hosting using <a href = "https://tanu-n-prabhu.github.io/Notes-Me/" style="color: blue">GitHub Pages</a>. So I just wanted to develop this application because my notes application on my phone didn’t have the feature of downloading my written information as a text file. So thanks to <a href="https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm" style="color: blue">encodedna.com</a>, this is where I got the logic of making a HTML form information to be downloadable as a text file. I really appreciate your help. I develop portfolios and various web applications for free. Visit my <a href="https://github.com/Tanu-N-Prabhu" style="color: blue">GitHub</a> and let me know if you need any help. </p>
 
 # Objective
 
@@ -38,6 +41,14 @@
 
 5. If you are facing any issues or need any help, feel free to drop a mail at <b>tanuprabhu96@gmail.com.</b>
 
+# Result
 
+Executed on my Laptop - HP Elitebook
+
+<img src = "https://github.com/Tanu-N-Prabhu/Notes-Me/blob/main/1.PNG">
+
+Executed on the emulator - iPhone X
+
+<img src = "https://github.com/Tanu-N-Prabhu/Notes-Me/blob/main/2.PNG">
 
 https://tanu-n-prabhu.github.io/Notes-Me/
