@@ -14,7 +14,7 @@
 # Languages Used
 
 
-| Name | Description  | 
+|<p align = "justify"> Name </p>|<p align = "justify"> Description </p> | 
 | :---:   | :-: | 
 | <img src = "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> |<p align = "justify"> I have used `HTML` as the <b>base code</b> for the application, meaning all the <b>forms, buttons</b> are coded using `HTML`.</p> | 
 | <img src = "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> |<p align = "justify"> I have used `CSS` for <b>styling the pages</b>, meaning designing the pages visually like background color, alignment of the buttons, and page layouts.</p> | 
